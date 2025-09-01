@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingStart="30sp"
+    tools:ignore="RtlSymmetry">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="50sp">
+
+        <Button
+            android:id="@+id/button_goBack_homePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LogOut"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="40sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginBottom="60sp"
+            android:textSize="30sp"
+            android:text="HOME PAGE"
+            app:layout_constraintLeft_toRightOf="@+id/button_goBack_homePage"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView_uploadPrescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Prescription"
+        android:paddingTop="20sp"
+        android:paddingBottom="20sp"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView_generateRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Suggestion"
+        android:paddingBottom="20sp"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView_talkToNutritionist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Talk To Nutritionist"
+        android:onClick="talkToNutritionist"
+        android:paddingBottom="20sp"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView_healthStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health Status"
+        android:paddingBottom="20sp"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView_subscriptionStatus_ClientHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscription Status"
+        android:paddingBottom="20sp"
+        android:textSize="12sp"
+        android:layout_marginTop="600sp"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

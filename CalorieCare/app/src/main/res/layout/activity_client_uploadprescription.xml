@@ -1,0 +1,250 @@
+<!--activity_uploadprescription-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingStart="30sp"
+    tools:ignore="RtlSymmetry">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="50sp">
+
+        <Button
+            android:id="@+id/button_goBackFrom_UploadPrescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Back"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView_uploadPrescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25sp"
+            android:layout_marginBottom="60sp"
+            android:textSize="30sp"
+            android:text="Upload Prescription"
+            app:layout_constraintLeft_toRightOf="@+id/button_goBackFrom_UploadPrescription"
+            android:layout_marginStart="20sp"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/textView_age_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age (year): "
+                android:textSize="20sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                tools:ignore="HardcodedText" />
+
+
+
+            <TextView
+                android:id="@+id/textView_height_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height (cm): "
+                android:textSize="20sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView_weight_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight (kg): "
+                android:textSize="20sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView_occupation_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Occupation: "
+                android:textSize="20sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView_gender_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender: "
+                android:textSize="20sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView_diabetic_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diabetic: "
+                android:textSize="20sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView_allergy_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allergy: "
+                android:textSize="20sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView_diet_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diet: "
+                android:textSize="20sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText_age_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Age"
+                android:text="20"
+                android:textSize="15sp"
+                android:width="250sp"
+                android:inputType="number"
+                tools:ignore="HardcodedText" />
+
+
+            <EditText
+                android:id="@+id/editText_height_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Height"
+                android:text="32"
+                android:textSize="15sp"
+                android:width="250sp"
+                android:inputType="number"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editText_weight_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Weight"
+                android:text="50"
+                android:textSize="15sp"
+                android:width="250sp"
+                android:inputType="number"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editText_occupation_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Occupation"
+                android:text="Student"
+                android:textSize="15sp"
+                android:width="250sp"
+                tools:ignore="HardcodedText" />
+
+            <Spinner
+                android:id="@+id/spinner_gender_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp" />
+
+            <Spinner
+                android:id="@+id/spinner_diabetic_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_allergy_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_diet_UploadPrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240sp"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_reset_UploadPrescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:id="@+id/button_submit_UploadPrescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            tools:ignore="ButtonStyle,HardcodedText" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/output_UploadPrescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+</LinearLayout>
+

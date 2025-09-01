@@ -1,0 +1,233 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="60sp"
+        android:textSize="30sp"
+        android:text="REGISTRATION"
+        tools:ignore="HardcodedText" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.4"
+            android:layout_marginStart="30sp">
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="20sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="20sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:textSize="20sp"
+                android:paddingTop="8sp"
+                android:paddingBottom="8sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password: "
+                android:textSize="20sp"
+                android:paddingTop="8sp"
+                android:paddingBottom="8sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView_security_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security Qs: "
+                android:textSize="18sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="9.5sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView_security_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security Ans: "
+                android:textSize="18sp"
+                android:paddingTop="8.75sp"
+                android:paddingBottom="8.75sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/textView_designation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position: "
+                android:textSize="18sp"
+                android:paddingTop="8.75sp"
+                android:paddingBottom="8.75sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Name"
+                android:text="Raju"
+                android:textSize="15sp"
+                android:width="250sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <EditText
+                android:id="@+id/editText_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Email Address"
+                android:text="HasanRazu.cse.193.gub@gmail.com"
+                android:textSize="15sp"
+                android:width="250sp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/editText_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Phone Number"
+                android:text="01585252"
+                android:textSize="15sp"
+                android:width="250sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:text="yourText"
+                    android:hint="*******"
+                    android:textSize="15sp"
+                    android:width="250sp"
+                    tools:ignore="Autofill,HardcodedText" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_showPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="hardcodedText"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editText_security_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Choose Security Question"
+                android:text="Name of First Pet"
+                android:textSize="15sp"
+                android:width="250sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <EditText
+                android:id="@+id/editText_security_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="250sp"
+                android:hint="Enter Security Answer"
+                android:text="Unknown"
+                android:textSize="15sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+                <Spinner
+                    android:id="@+id/spinner_clientType_registration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            tools:ignore="ButtonStyle,HardcodedText" />
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:layout_marginStart="100sp"
+            tools:ignore="ButtonStyle,HardcodedText" />
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            tools:ignore="ButtonStyle,HardcodedText" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+
+
+</LinearLayout>

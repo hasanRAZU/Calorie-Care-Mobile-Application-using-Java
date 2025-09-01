@@ -1,0 +1,268 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="@color/white"
+android:orientation="vertical"
+android:paddingStart="30sp"
+tools:ignore="RtlSymmetry">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30sp"
+    android:layout_marginBottom="50sp">
+
+    <Button
+        android:id="@+id/button_goBack_NutritionistSuggestToClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:onClick="buttonGoBack"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="60sp"
+        android:textSize="30sp"
+        android:text="Daily Plan"
+        app:layout_constraintLeft_toRightOf="@+id/button_goBack_NutritionistSuggestToClient"
+        tools:ignore="HardcodedText,MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food And Exercise"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fruit :"
+                android:textSize="20sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegetable :"
+                android:textSize="20sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whole Grain: "
+                android:textSize="20sp"
+                android:paddingTop="8sp"
+                android:paddingBottom="8sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Protein :"
+                android:textSize="20sp"
+                android:paddingTop="8sp"
+                android:paddingBottom="8sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dairy :"
+                android:textSize="18sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="8.5sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hydration :"
+                android:textSize="18sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="8sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exercise :"
+                android:textSize="18sp"
+                android:paddingTop="8.75sp"
+                android:paddingBottom="8.75sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exercise :"
+                android:textSize="18sp"
+                android:paddingTop="8.75sp"
+                android:paddingBottom="8.75sp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exercise :"
+                android:textSize="18sp"
+                android:paddingTop="8.75sp"
+                android:paddingBottom="8.75sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText_fruit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Name and Amount (in gram)"
+                android:textSize="15sp"
+                android:width="250sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <EditText
+                android:id="@+id/editText_vegetable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:hint="Name and Amount (in gram)"
+                android:textSize="15sp"
+                android:width="250sp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/editText_wholeGrain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Name and Amount (in gram)"
+                android:textSize="15sp"
+                android:width="250sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText_protein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Name and Amount (in gram)"
+                    android:textSize="15sp"
+                    android:width="250sp"
+                    tools:ignore="Autofill,HardcodedText" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editText_dairy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Name and Amount (in gram)"
+                android:textSize="15sp"
+                android:width="250sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <EditText
+                android:id="@+id/editText_hydration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="250sp"
+                android:hint="Amount (Litre)"
+                android:textSize="15sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <EditText
+                android:id="@+id/editText_exercise1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="250sp"
+                android:hint="Walk-Run-Swim-Cyclint (in Min),"
+                android:textSize="15sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <EditText
+                android:id="@+id/editText_exercise2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="250sp"
+                android:hint="Weight Lifting, Resistance Band, PushUp (in Min)"
+                android:textSize="11sp"
+                android:layout_marginTop="5sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+            <EditText
+                android:id="@+id/editText_exercise3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="250sp"
+                android:hint="Yoga-Pilates-Stretching (in Min)"
+                android:textSize="15sp"
+                android:layout_marginTop="2sp"
+                tools:ignore="Autofill,HardcodedText,TextFields" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginStart="310sp"
+        android:onClick="submitDailyPlan"
+        tools:ignore="HardcodedText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client Bio-Data"
+        android:textSize="20sp"
+        android:layout_marginTop="10sp"
+        tools:ignore="HardcodedText" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_output_SuggestToClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+
+</LinearLayout>
